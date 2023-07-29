@@ -37,6 +37,10 @@ class Chronometer {
   }
 
   split() {
-    
+    let min = this.getMinutes()
+    let sec = this.getSeconds()
+    let transMin = this.computeTwoDigitNumber(min)
+    let transSec = this.computeTwoDigitNumber(sec)
+    return transMin + ":" + transSec
   }
 }
